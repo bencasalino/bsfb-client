@@ -67,11 +67,11 @@
           <p> 2015-16</p>
         </div>
                         <div class="past-champs">
-          <img class="logo" src="/../../static/team-stone.svg">
+          <img class="logo" src="/../../static/adam2.svg">
           <p> 2016-17</p>
         </div>
                         <div class="past-champs">
-          <img class="logo" src="/../../static/team-thunder.svg">
+          <img class="logo" src="/../../static/burg5.svg">
           <p> 2017-18</p>
         </div>
 
@@ -154,7 +154,10 @@ box-shadow: 0px 7px 21px 0px rgba(34,34,34,.5);
 .logo {
   max-height: 5rem;
   max-width: 5rem;
+    min-height: 5rem;
+  min-width: 5rem;
 }
+
 .bsfb {
   padding-left: .5rem;
     padding-right: .5rem;
