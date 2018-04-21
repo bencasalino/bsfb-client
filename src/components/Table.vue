@@ -1,19 +1,19 @@
 <template>
 <div id="Wrapper">
-      <div class="row">
-      <div class="id">  ID  <br> </div>
-      <div class="name"> MANAGER <br> </div>
-      <div class="box"> TEAM NAME <br> </div>
-      <div class="bignumber"> JOINED <br> </div>
-      <div class="status"> STATUS <br> </div>
-      <div class="bignumber">   PTS <br> </div>
-      <div class="number">   WINS <br> </div>
-      <div class="number">   LOSS <br> </div>
-      <div class="number">   GAMES <br> </div>
-      <div class="number">   PLAYOFFS <br> </div>
-      <div class="number">   TOP FOUR <br> </div>
-      <div class="number">   FINALS <br> </div>
-      <div class="number">   TITLES <br> </div>
+      <div class="row bold">
+      <div class="flow small">  ID  <br> </div>
+      <div class="flow hundo"> MANAGER <br> </div>
+      <div class="flow big"> TEAM NAME <br> </div>
+      <div class="flow hundo"> JOINED <br> </div>
+      <div class="flow hundo"> STATUS <br> </div>
+      <div class="flow hundo">   PTS <br> </div>
+<div class="flow num">   W <br> </div>
+<div class="flow num">   L <br> </div>
+<div class="flow num">   GAMES <br> </div>
+<div class="flow num">   TOP 8 <br> </div>
+<div class="flow num">   TOP 4 <br> </div>
+<div class="flow num">   FINALS <br> </div>
+      <div class="flow num">   TITLES <br> </div>
   <br>
   </div>
   <div v-bind:key="test.managers" v-for="test in data.managers" class="card">
@@ -22,19 +22,19 @@
 
 
   <div class="row">
-      <div class="id">  {{ test.id}}  <br> </div>
-      <div class="name">   {{ test.manager}} <br> </div>
-      <div class="box">   {{ test.team_name}} <br> </div>
-      <div class="bignumber">   {{ test.year_joined}} <br> </div>
-      <div class="status">   {{ test.status}} <br> </div>
-      <div class="bignumber">   {{ test.total_pts}} <br> </div>
-      <div class="number">   {{ test.total_w}} <br> </div>
-      <div class="number">   {{ test.total_l}} <br> </div>
-      <div class="number">   {{ test.games_played}} <br> </div>
-      <div class="number">   {{ test.playoffs}} <br> </div>
-      <div class="number">   {{ test.topfour}} <br> </div>
-      <div class="number">   {{ test.finals}} <br> </div>
-      <div class="number">   {{ test.titles}} <br> </div>
+      <div class="flow small">  {{ test.id}}  </div>
+      <div class="flow hundo">   {{ test.manager}} </div>
+      <div class="flow big">   {{ test.team_name}} <br> </div>
+      <div class="flow hundo">   {{ test.year_joined}} <br> </div>
+      <div class="flow hundo">   {{ test.status}} <br> </div>
+      <div class="flow hundo">   {{ test.total_pts}} <br> </div>
+      <div class="flow num">   {{ test.total_w}} <br> </div>
+      <div class="flow num">   {{ test.total_l}} <br> </div>
+      <div class="flow num">   {{ test.games_played}} <br> </div>
+      <div class="flow num">   {{ test.playoffs}} <br> </div>
+      <div class="flow num">   {{ test.topfour}} <br> </div>
+      <div class="flow num">   {{ test.finals}} <br> </div>
+      <div class="flow num">   {{ test.titles}} <br> </div>
   <br>
   </div>
   </div>
@@ -74,57 +74,49 @@ export default {
   background-color:#f7f8f3;
   color: #222;
   margin: 1rem;
-    width: 100vw;
+    min-width: 100vw;
     font-family: 'Nanum Gothic', sans-serif;
         font-family: 'Fira Sans', sans-serif;
+        text-align: left;
+          justify-content: center;
 
 }
 
 
 .row {
   display: flex;
-  justify-content: flex-start;
-  width: 100vw;
+text-align: left;
+  /* justify-content: space-around; */
+  /* width: 100vw; */
     padding: 2px;
+}
+.flow {
+  text-align: left;
+  display: flex;
+  justify-content: flex-start;
+  /* min-width: 50px;
+    max-width: 50px; */
 }
 
-.box {
-    padding: 2px;
-  max-width: 150px;
-  min-width: 150px;
-  text-align: left;
+.hundo {
+    min-width: 100px;
+    max-width: 100px;
 }
-.status {
-    padding: 2px;
-  max-width: 60px;
-  min-width: 60px;
-  text-align: left;
+.small {
+    min-width: 30px;
+    max-width: 30px;
 }
-.id {
-  padding: 2px;
-  max-width: 30px;
-  min-width: 30px;
-    text-align: left;
-    font-family: 'Fira Sans', sans-serif;
+.big {
+    min-width: 200px;
+    max-width: 200px;
 }
-.number {
-    padding: 2px;
-  max-width: 20px;
-  min-width: 20px;
-    text-align: left;
-        font-family: 'Fira Sans', sans-serif;
+
+.num {
+    min-width: 65px;
+    max-width: 65px;
 }
-.bignumber {
-    padding: 2px;
-    max-width: 50px;
-  min-width: 50px;
-    text-align: left;
-        font-family: 'Fira Sans', sans-serif;
+.bold {
+  font-weight: 900;
 }
-.name {
-    padding: 2px;
-    max-width: 64px;
-  min-width: 64px;
-    text-align: left;
-}
+
 </style>
