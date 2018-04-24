@@ -10,26 +10,14 @@
 </h1>
   </div>
     <div class="right">
+
   <a href="#">
-  <button>
-    test
-  </button>
+    <img class="social" src="/../../static/fb3.svg">
   </a>
     <a href="#">
-  <button>
-    test
-  </button>
+    <img class="social" src="/../../static/sl3.svg">
   </a>
-    <a href="#">
-  <button>
-    test
-  </button>
-  </a>
-    <a href="#">
-  <button>
-    test
-  </button>
-  </a>
+
 </div>
 </div>
 
@@ -191,12 +179,26 @@ h1 {
 
 }
 .right {
+  padding-right: 30px;
     display: flex;
     justify-content: space-around;
 }
 .left {
     display: flex;
     align-items: center;
+}
+.social {
+  /* padding-right:.1rem; */
+    max-height: 4rem;
+  max-width: 4rem;
+    min-height: 4rem;
+  min-width:4rem;
+
+}
+
+
+.social:hover {
+cursor: pointer;
 }
 
 </style>

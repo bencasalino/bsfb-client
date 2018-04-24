@@ -7,34 +7,30 @@
       <div class="flow hundo"> JOINED <br> </div>
       <div class="flow hundo"> STATUS <br> </div>
       <div class="flow hundo">   PTS <br> </div>
-<div class="flow num">   W <br> </div>
-<div class="flow num">   L <br> </div>
-<div class="flow num">   GAMES <br> </div>
-<div class="flow num">   TOP 8 <br> </div>
-<div class="flow num">   TOP 4 <br> </div>
-<div class="flow num">   FINALS <br> </div>
+      <div class="flow num">   W <br> </div>
+      <div class="flow num">   L <br> </div>
+      <div class="flow num">   GAMES <br> </div>
+      <div class="flow num">   TOP 8 <br> </div>
+      <div class="flow num">   TOP 4 <br> </div>
+      <div class="flow num">   FINALS <br> </div>
       <div class="flow num">   TITLES <br> </div>
   <br>
   </div>
-  <div v-bind:key="test.managers" v-for="test in data.managers" class="card">
-
-
-
-
+  <div v-bind:key="single_manager.managers" v-for="single_manager in data.managers">
   <div class="row">
-      <div class="flow small">  {{ test.id}}  </div>
-      <div class="flow hundo">   {{ test.manager}} </div>
-      <div class="flow big">   {{ test.team_name}} <br> </div>
-      <div class="flow hundo">   {{ test.year_joined}} <br> </div>
-      <div class="flow hundo">   {{ test.status}} <br> </div>
-      <div class="flow hundo">   {{ test.total_pts}} <br> </div>
-      <div class="flow num">   {{ test.total_w}} <br> </div>
-      <div class="flow num">   {{ test.total_l}} <br> </div>
-      <div class="flow num">   {{ test.games_played}} <br> </div>
-      <div class="flow num">   {{ test.playoffs}} <br> </div>
-      <div class="flow num">   {{ test.topfour}} <br> </div>
-      <div class="flow num">   {{ test.finals}} <br> </div>
-      <div class="flow num">   {{ test.titles}} <br> </div>
+      <div class="flow small">  {{ single_manager.id}}  </div>
+      <div class="flow hundo">   {{ single_manager.manager}} </div>
+      <div class="flow big">   {{ single_manager.team_name}} <br> </div>
+      <div class="flow hundo">   {{ single_manager.year_joined}} <br> </div>
+      <div class="flow hundo">   {{ single_manager.status}} <br> </div>
+      <div class="flow hundo">   {{ single_manager.total_pts}} <br> </div>
+      <div class="flow num">   {{ single_manager.total_w}} <br> </div>
+      <div class="flow num">   {{ single_manager.total_l}} <br> </div>
+      <div class="flow num">   {{ single_manager.games_played}} <br> </div>
+      <div class="flow num">   {{ single_manager.playoffs}} <br> </div>
+      <div class="flow num">   {{ single_manager.topfour}} <br> </div>
+      <div class="flow num">   {{ single_manager.finals}} <br> </div>
+      <div class="flow num">   {{ single_manager.titles}} <br> </div>
   <br>
   </div>
   </div>
