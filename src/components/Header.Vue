@@ -11,11 +11,14 @@
   </div>
     <div class="right">
 
-  <a href="#">
+  <a href="https://www.facebook.com/groups/123422284409807/">
     <img class="social" src="/../../static/fb3.svg">
   </a>
-    <a href="#">
+    <a href="https://bsfb.slack.com/">
     <img class="social" src="/../../static/sl3.svg">
+  </a>
+      <a href="http://games.espn.com/fba/leagueoffice?leagueId=57357">
+    <img class="social" src="/../../static/espn3.svg">
   </a>
 
 </div>
