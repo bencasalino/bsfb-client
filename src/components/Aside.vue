@@ -6,10 +6,9 @@
       <p>
       BSFB about section
     </p>
-<a href="www.googl.com">
-  <button class="btn">
+<a class="btn" href="www.google.com">
+
     CONSITITUTION & RULES
-  </button>
 </a>
 <br>
 <a href="#">
@@ -84,21 +83,13 @@
     </tr>
     </tbody>
     </table>
+    <br>
+
   </div>
   </div>
   <!-- end past champs table and row  -->
 
-
-
 <div class="splitter">
-
-
-
-
-
-
-
-
 <br>
 <!-- <h3>ALL TIME WINS</h3> -->
 <div class="table-wrap">
@@ -263,17 +254,19 @@ export default {
 
 .aside {
   padding: 1rem;
-  min-width: 20rem;
+  max-width: 300px;
+    min-width: 300px;
+      max-height: 600px;
+    min-height: 600px;
   /* height: 200px; */
     background: linear-gradient(to bottom, #dadbd6 , #c4c5c0);
-    z-index: -9999;
+ z-index: 2 !important;
     border-bottom-left-radius: 10px;
-
     border-bottom-right-radius: 10px;
 }
 .table-wrap {
   /* background: #dadbd6; */
-  z-index: 9999;
+  z-index: 2;
 }
 
 .content {
@@ -287,7 +280,7 @@ export default {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-    z-index: 9999;
+    z-index: 2;
       /* min-width: 200px; */
 }
 h2 {
@@ -301,13 +294,13 @@ table.greyGridTable {
       font-size: .3rem;
       font-family: 'Fira Sans', sans-serif;
       font-weight: 400;
-        z-index: 9999;
+        z-index: 2;
 }
 
 table.greyGridTable td, table.greyGridTable th {
   border-bottom: 2px solid rgb(225, 225, 225);
   padding: 2px 4px;
-    z-index: 9999;
+    z-index: 2;
       background: #ec202a;
 }
 table.greyGridTable tbody td {
@@ -379,11 +372,13 @@ td {
   background: #ec202a;
   padding: 5px 5px 5px 5px;
   text-decoration: none;
+      z-index: 9999 !important;
 }
 
 .btn:hover {
   background: #da2231;
   text-decoration: none;
+      z-index: 9999 !important;
 }
 
 </style>

@@ -1,10 +1,10 @@
 <template>
   <div id="app">
         <Header/>
-        <div class="split">
+        <span id="split">
           <Aside/>
           <Main/>
-        </div>
+        </span>
         <!-- <router-view/> -->
   </div>
 </template>
@@ -27,18 +27,19 @@ export default {
 
 <style>
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans|Nanum+Gothic:700');
-#app {
-    /* background-color:#f7f8f3; */
-  color: #222;
-      font-family: 'Fira Sans', sans-serif;
-      font-weight: 400;
-      height: 100vh;
-            min-width: 100vw;
-}
+    #app {
+    color: #222;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    height: 100vh;
+    min-width: 100vw;
+    }
+    #split {
+    z-index: 1 !important;
+          display: flex;
+          background-color: #222;
+    }
 
-.split {
-display: flex;
-justify-content: space-between;
-}
+
 
 </style>

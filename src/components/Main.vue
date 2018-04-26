@@ -1,19 +1,21 @@
 <template>
   <div id="wrap">
-<p>klfjskd</p>
+    <Table/>
   </div>
 </template>
 
 <script>
+import Table from '@/components/Table'
+
 /* eslint-disable */
 export default {
   name: "Main",
-  data() {
-    return {
-    };
+components: {
+Table
   }
 };
 </script>
+
 
 <style scoped>
 /* div {

@@ -4,9 +4,9 @@
       <div class="flow small">  ID  <br> </div>
       <div class="flow hundo"> MANAGER <br> </div>
       <div class="flow big"> TEAM NAME <br> </div>
-      <div class="flow hundo"> JOINED <br> </div>
-      <div class="flow hundo"> STATUS <br> </div>
-      <div class="flow hundo">   PTS <br> </div>
+      <div class="flow mid"> JOINED <br> </div>
+      <div class="flow mid"> STATUS <br> </div>
+      <div class="flow mid">   PTS <br> </div>
       <div class="flow num">   W <br> </div>
       <div class="flow num">   L <br> </div>
       <div class="flow num">   GAMES <br> </div>
@@ -21,9 +21,9 @@
       <div class="flow small">  {{ single_manager.id}}  </div>
       <div class="flow hundo">   {{ single_manager.manager}} </div>
       <div class="flow big">   {{ single_manager.team_name}} <br> </div>
-      <div class="flow hundo">   {{ single_manager.year_joined}} <br> </div>
-      <div class="flow hundo">   {{ single_manager.status}} <br> </div>
-      <div class="flow hundo">   {{ single_manager.total_pts}} <br> </div>
+      <div class="flow mid">   {{ single_manager.year_joined}} <br> </div>
+      <div class="flow mid">   {{ single_manager.status}} <br> </div>
+      <div class="flow mid">   {{ single_manager.total_pts}} <br> </div>
       <div class="flow num">   {{ single_manager.total_w}} <br> </div>
       <div class="flow num">   {{ single_manager.total_l}} <br> </div>
       <div class="flow num">   {{ single_manager.games_played}} <br> </div>
@@ -69,8 +69,9 @@ export default {
 #Wrapper {
   background-color:#f7f8f3;
   color: #222;
-  margin: 1rem;
-    min-width: 100vw;
+  margin: .2rem;
+  font-size: 11px;
+    /* min-width: 100vw; */
     font-family: 'Nanum Gothic', sans-serif;
         font-family: 'Fira Sans', sans-serif;
         text-align: left;
@@ -90,26 +91,35 @@ text-align: left;
   text-align: left;
   display: flex;
   justify-content: flex-start;
+  border-bottom: 2px solid rgb(213, 212, 212);
   /* min-width: 50px;
     max-width: 50px; */
 }
 
 .hundo {
-    min-width: 100px;
-    max-width: 100px;
+    min-width: 80px;
+    max-width: 80px;
+          font-size: 9px;
+}
+
+.mid {
+    min-width: 50px;
+    max-width: 50px;
+          font-size: 10px;
 }
 .small {
-    min-width: 30px;
-    max-width: 30px;
+    min-width: 20px;
+    max-width: 20px;
 }
 .big {
-    min-width: 200px;
-    max-width: 200px;
+    min-width: 90px;
+    max-width: 90px;
+      font-size: 8px;
 }
 
 .num {
-    min-width: 65px;
-    max-width: 65px;
+    min-width: 30px;
+    max-width: 30px;
 }
 .bold {
   font-weight: 900;
