@@ -1,7 +1,5 @@
 <template>
 <div id="Wrapper">
-
-
 <div id="header">
   <div class="left">
     <img class="bsfb" src="/../../static/gray222.svg">
@@ -20,8 +18,10 @@
       <a href="http://games.espn.com/fba/leagueoffice?leagueId=57357">
     <img class="social" src="/../../static/espn3.svg">
   </a>
-
 </div>
+</div>
+ <div class="past-champs">
+<img class="league-logo" src="/../../static/league.svg">
 </div>
 
 
@@ -65,12 +65,9 @@
           <img class="logo" src="/../../static/burg5.svg">
           <p> 2017-18</p>
         </div>
-
+        <br>
 </div>
- <div class="past-champs">
-<!-- <h1>BSFB BASKETBALL LEAGUE</h1> -->
-<img class="league-logo" src="/../../static/league.svg">
-</div>
+<div class="foot">footer</div>
         <div class="champs">
       <!-- <p class="champs">PAST LEAGUE CHAMPIONS</p> -->
       </div>
@@ -92,7 +89,9 @@ export default {
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans|Nanum+Gothic:700');
-
+#Wrapper {
+      background-color:#f7f8f3;
+}
 
 
 #Wrapper-logo {
@@ -110,8 +109,8 @@ export default {
   justify-content: space-between;
   /* align-content: center; */
 height: 10vh;
-  background-color: #0777bc;
-  /* border-bottom:.4rem solid #222; */
+  background-color: #222;
+  border-bottom:.2rem solid #f7f8f3;
 }
 
 
@@ -121,8 +120,8 @@ height: 10vh;
     display: flex;
   justify-content: space-around;
   background-color: #222;
-  border-bottom: solid .3rem #0777bc;
-    border-top: solid .3rem #f7f8f3;
+  /* border-bottom: solid .2rem #f7f8f3; */
+    border-top: solid .2rem #f7f8f3;
       /* outline: .3rem solid #0777bc; */
       -webkit-box-shadow: 0px 7px 21px 0px rgba(34,34,34,.5);
 -moz-box-shadow: 0px 7px 21px 0px rgba(34,34,34,.5);
@@ -130,12 +129,11 @@ box-shadow: 0px 7px 21px 0px rgba(34,34,34,.5);
 }
 
 .past-champs {
+  margin-top:2rem;
       display: flex;
         align-items: center;
   flex-direction: column;
   /* color: #ec202a; */
-
-
 }
 
 .league-logo {
@@ -202,6 +200,12 @@ h1 {
 
 .social:hover {
 cursor: pointer;
+}
+
+.foot {
+    background-color: #222;
+    height: 20vh;
+    position: sticky;
 }
 
 </style>
