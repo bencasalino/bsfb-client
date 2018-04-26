@@ -81,7 +81,7 @@ export default {
 
 <style>
 #wrap {
-      background-color:#f7f8f3;
+      /* background-color:#f7f8f3; */
       border-bottom: .2rem solid #f7f8f3;
 }
 

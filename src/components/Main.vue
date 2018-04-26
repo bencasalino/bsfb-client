@@ -16,9 +16,9 @@ export default {
 </script>
 
 <style scoped>
-div {
+/* div {
 width: 100%;
 height: 400px;
       background-color:#f7f8f3;
-}
+} */
 </style>
