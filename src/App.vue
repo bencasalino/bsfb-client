@@ -1,7 +1,6 @@
 <template>
   <div id="app">
         <Header/>
-        <Subheader/>
         <div class="split">
           <Aside/>
           <Main/>
@@ -12,7 +11,6 @@
 
 <script>
 import Header from '@/components/Header'
-import Subheader from '@/components/Subheader'
 import Main from '@/components/Main'
 import Aside from '@/components/Aside'
 
@@ -21,7 +19,6 @@ export default {
   name: 'App',
   components: {
     Header,
-    Subheader,
     Main,
     Aside
   }

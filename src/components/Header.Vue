@@ -81,13 +81,13 @@ export default {
 
 <style>
 #wrap {
-  /* max-width:100vw; */
-      background-color:#f7f8f3 !important;
-      /* z-index: -99999 !important; */
+      background-color:#f7f8f3;
+      border-bottom: .2rem solid #f7f8f3;
 }
 
 .header-top {
-  background-color:#0777bc;
+  /* background-color:#0777bc; */
+  background: linear-gradient(to right, #0777bc , #0e5f92);
   height: 10vh;
     justify-content: space-between;
   display: flex;
@@ -116,7 +116,7 @@ flex-direction: row;
   flex-direction: row;
     justify-content: space-between;
   display: flex;
-  margin-top:5px;
+  margin-top:8px;
   margin-right:3rem;
 }
 h1 {
