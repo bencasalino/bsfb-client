@@ -1,80 +1,72 @@
 <template>
-<div id="Wrapper">
-<div id="header">
-  <div class="left">
-    <img class="bsfb" src="/../../static/gray222.svg">
-    <h1>BSFB LEAGUE
-      <span class="space">BASKETBALL</span>
-</h1>
-  </div>
-    <div class="right">
-
-  <a href="https://www.facebook.com/groups/123422284409807/">
-    <img class="social" src="/../../static/fb3.svg">
-  </a>
-    <a href="https://bsfb.slack.com/">
-    <img class="social" src="/../../static/sl3.svg">
-  </a>
-      <a href="http://games.espn.com/fba/leagueoffice?leagueId=57357">
-    <img class="social" src="/../../static/espn3.svg">
-  </a>
-</div>
-</div>
- <div class="past-champs">
-<img class="league-logo" src="/../../static/league.svg">
-</div>
-
-
-      <div class="Wrapper-champs">
+<div id="wrap">
+  <div class="header-top">
+    <div class="header-left">
+          <img class="header-logo" src="/../../static/league.svg">
+          <h1>BSFB LEAGUE
+          <br>
+          <span class="space">BASKETBALL</span>
+          </h1>
+    </div>
+    <div class="header-center">
         <div class="past-champs">
           <img class="logo" src="/../../static/team-jon.svg">
-          <p> 2008-09</p>
+          <p class="year"> 2008</p>
         </div>
         <div class="past-champs">
           <img class="logo" src="/../../static/team-jon.svg">
-          <p> 2009-10</p>
+          <p class="year"> 2009</p>
         </div>
         <div class="past-champs">
           <img class="logo" src="/../../static/team-ben.svg">
-          <p> 2010-11</p>
+          <p class="year"> 2010</p>
         </div>
         <div class="past-champs">
           <img class="logo" src="/../../static/team-kristen.svg">
-          <p> 2011-12*</p>
+          <p class="year"> 2011*</p>
         </div>        <div class="past-champs">
           <img class="logo" src="/../../static/team-ben.svg">
-          <p> 2012-13</p>
+          <p class="year"> 2012</p>
         </div>
                 <div class="past-champs">
           <img class="logo" src="/../../static/team-rafa.svg">
-          <p> 2013-14</p>
+          <p class="year"> 2013</p>
         </div>
                 <div class="past-champs">
           <img class="logo" src="/../../static/team-jon.svg">
-          <p> 2014-15</p>
+          <p class="year"> 2014</p>
         </div>
                         <div class="past-champs">
           <img class="logo" src="/../../static/team-rafa.svg">
-          <p> 2015-16</p>
+          <p class="year"> 2015</p>
         </div>
                         <div class="past-champs">
           <img class="logo" src="/../../static/adam2.svg">
-          <p> 2016-17</p>
+          <p class="year"> 2016</p>
         </div>
                         <div class="past-champs">
           <img class="logo" src="/../../static/burg5.svg">
-          <p> 2017-18</p>
+          <p class="year"> 2017</p>
         </div>
         <br>
 </div>
-<div class="foot">footer</div>
-        <div class="champs">
-      <!-- <p class="champs">PAST LEAGUE CHAMPIONS</p> -->
-      </div>
-</div>
+    <div class="header-right">
+        <a href="https://www.facebook.com/groups/123422284409807/">
+    <img class="bm" src="/../../static/fb3.svg">
+  </a>
+    <a href="https://bsfb.slack.com/">
+    <img class="bm" src="/../../static/sl3.svg">
+  </a>
+      <a href="http://games.espn.com/fba/leagueoffice?leagueId=57357">
+    <img class="bm" src="/../../static/espn3.svg">
+  </a>
+    </div>
+  </div>
 
+    <!-- <img id="triangle" src="/../../static/tri5.svg"> -->
+      <!-- <div class="blej"></div> -->
+  </div>
 </template>
-
 
 <script>
 /* eslint-disable */
@@ -87,125 +79,77 @@ export default {
 };
 </script>
 
-<style scoped>
-@import url('https://fonts.googleapis.com/css?family=Fira+Sans|Nanum+Gothic:700');
-#Wrapper {
-      background-color:#f7f8f3;
+<style>
+#wrap {
+  /* max-width:100vw; */
+      background-color:#f7f8f3 !important;
+      /* z-index: -99999 !important; */
 }
 
-
-#Wrapper-logo {
-        font-family: 'Fira Sans', sans-serif;
+.header-top {
+  background-color:#0777bc;
+  height: 10vh;
+    justify-content: space-between;
   display: flex;
-  flex-direction: column;
-  /* justify-content: center; */
-  align-content: center;
 }
-
-#header {
-          font-family: 'Fira Sans', sans-serif;
-  display: flex;
-  /* flex-direction: row; */
-  justify-content: space-between;
-  /* align-content: center; */
-height: 10vh;
-  background-color: #222;
-  border-bottom:.2rem solid #f7f8f3;
-}
-
-
-.Wrapper-champs {
-        font-family: 'Fira Sans', sans-serif;
-    padding-top: .5rem;
-    display: flex;
-  justify-content: space-around;
-  background-color: #222;
-  /* border-bottom: solid .2rem #f7f8f3; */
-    border-top: solid .2rem #f7f8f3;
-      /* outline: .3rem solid #0777bc; */
-      -webkit-box-shadow: 0px 7px 21px 0px rgba(34,34,34,.5);
--moz-box-shadow: 0px 7px 21px 0px rgba(34,34,34,.5);
-box-shadow: 0px 7px 21px 0px rgba(34,34,34,.5);
-}
-
-.past-champs {
-  margin-top:2rem;
-      display: flex;
-        align-items: center;
-  flex-direction: column;
-  /* color: #ec202a; */
-}
-
-.league-logo {
-  max-height: 20rem;
-  max-width: 20rem;
-}
-.logo {
+.header-logo{
   max-height: 5rem;
-  max-width: 5rem;
-    min-height: 5rem;
-  min-width: 5rem;
+  max-width:5rem;
+}
+.bm {
+    /* max-width:5rem; */
+   height:50px;
+}
+.header-right {
+flex-direction: row;
+    justify-content: space-between;
+  display: flex;
+  width: 150px;
+}
+.header-left {
+flex-direction: row;
+    justify-content: space-between;
+  display: flex;
+  /* width: 150px; */
+}
+.header-center {
+  flex-direction: row;
+    justify-content: space-between;
+  display: flex;
+  margin-top:5px;
+  margin-right:3rem;
+}
+h1 {
+  margin-top:7px;
+  font-size: 1.6rem;
+  color: #f7f8f3;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+.space {
+  letter-spacing: 2.8px;
 }
 
-.bsfb {
-  padding-left: .5rem;
-    padding-right: .5rem;
-  max-height: 4rem;
-  max-width: 4rem;
+.logo {
+  max-height: 2rem;
+  max-width: 2rem;
+    min-height: 2rem;
+  min-width: 2rem;
 }
-
-p {
-  padding-top: .5rem;
-    padding-bottom: .5rem;
+.year {
+    margin-top:4px;
       color: #f7f8f3;
-    font-size: .5rem;
+    font-size: .3rem;
       font-family: 'Fira Sans', sans-serif;
       font-weight: 400;
 }
 
-.champs {
-    display: flex;
-  justify-content: center;
-        color: #222;
 
-}
-h1 {
-  font-size: 1.6rem;
-        color: #f7f8f3;
-        font-weight: 900;
-        letter-spacing: 1px;
-}
-.space {
-  letter-spacing: 2.8px;
-
-}
-.right {
-  padding-right: 30px;
-    display: flex;
-    justify-content: space-around;
-}
-.left {
-    display: flex;
-    align-items: center;
-}
-.social {
-  /* padding-right:.1rem; */
-    max-height: 4rem;
-  max-width: 4rem;
-    min-height: 4rem;
-  min-width:4rem;
-
-}
-
-
-.social:hover {
-cursor: pointer;
-}
-
-.foot {
-    background-color: #222;
-    height: 20vh;
-    position: sticky;
+.past-champs {
+  margin-right:.2rem;
+      display: flex;
+        align-items: center;
+  flex-direction: column;
 }
 
 </style>
