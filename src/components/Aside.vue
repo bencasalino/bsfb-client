@@ -138,7 +138,7 @@
 <tr>
 <td class="rank">4</td>
 <td class="rank">54</td>
-<td><img class="logo" src="/../../static/league.svg">ZETTLE</td>
+<td><img class="logo" src="/../../static/team-thunder.svg">ZETTLE</td>
 </tr>
 <tr>
 <td class="rank">5</td>
@@ -148,7 +148,7 @@
 <tr>
 <td class="rank">6</td>
 <td class="rank">32</td>
-<td><img class="logo" src="/../../static/league.svg">CRAIG</td>
+<td><img class="logo" src="/../../static/team-timbers.svg">CRAIG</td>
 </tr>
 <tr>
 <td class="rank">7</td>
@@ -158,17 +158,17 @@
 <tr>
 <td class="rank">8</td>
 <td class="rank">30</td>
-<td><img class="logo" src="/../../static/league.svg">CARLO</td>
+<td><img class="logo" src="/../../static/team-flame.svg">CARLO</td>
 </tr>
 <tr>
 <td class="rank">9</td>
 <td class="rank">25</td>
-<td><img class="logo" src="/../../static/league.svg">LAMAR</td>
+<td><img class="logo" src="/../../static/team-king.svg">LAMAR</td>
 </tr>
 <tr>
 <td class="rank">10</td>
 <td class="rank">24</td>
-<td class="rank"><img class="logo" src="/../../static/league.svg">YACINE</td>
+<td class="rank"><img class="logo" src="/../../static/team-burger.svg">YACINE</td>
 </tr>
 </tbody>
 </table>
@@ -208,22 +208,22 @@
 <tr>
 <td class="rank">5</td>
 <td class="rank">101,460</td>
-<td><img class="logo" src="/../../static/league.svg">LAMAR</td>
+<td><img class="logo" src="/../../static/team-king.svg">LAMAR</td>
 </tr>
 <tr>
 <td class="rank">6</td>
 <td class="rank">85,841</td>
-<td><img class="logo" src="/../../static/league.svg">CHRIS</td>
+<td><img class="logo" src="/../../static/team-chris.svg">CHRIS</td>
 </tr>
 <tr>
 <td class="rank">7</td>
 <td class="rank">75,283</td>
-<td><img class="logo" src="/../../static/league.svg">CRAIG</td>
+<td><img class="logo" src="/../../static/team-timbers.svg">CRAIG</td>
 </tr>
 <tr>
 <td class="rank">8</td>
 <td class="rank">75,736</td>
-<td><img class="logo" src="/../../static/league.svg">ZETTLE</td>
+<td><img class="logo" src="/../../static/team-thunder.svg">ZETTLE</td>
 </tr>
 <tr>
 <td class="rank">9</td>
@@ -233,7 +233,7 @@
 <tr>
 <td class="rank">10</td>
 <td class="rank">68,502</td>
-<td class="rank"><img class="logo" src="/../../static/league.svg">CARLO</td>
+<td class="rank"><img class="logo" src="/../../static/team-flame.svg">CARLO</td>
 </tr>
 </tbody>
 </table></div>
@@ -381,9 +381,6 @@ td {
 
 .btn {
   margin-top:10px;
-  /* -webkit-box-shadow: 0px 2px 3px #f7f8f3;
-  -moz-box-shadow: 0px 2px 3px #f7f8f3;
-  box-shadow: 0px 2px 3px #f7f8f3; */
   font-family: Arial;
   color: #f7f8f3;
   font-size: 11px;
@@ -398,5 +395,36 @@ td {
   text-decoration: none;
       z-index: 9999 !important;
 }
+
+
+/* Underline From Left */
+/* .btn {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.btn {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: #2098D1;
+  height: 4px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.btn:hover:before, .btn:focus:before, .btn:active:before {
+  right: 0;
+} */
 
 </style>
