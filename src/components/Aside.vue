@@ -3,13 +3,17 @@
   <div class="splitter">
     <div class="ctas">
 <br>
-      <p>
+      <!-- <p>
       BSFB about section
-    </p>
-<a class="btn" href="www.google.com">
-
-    CONSITITUTION & RULES
-</a>
+    </p> -->
+  <!-- CTA -->
+  <a>
+  <router-link :to="{name: 'Rules'}">
+  <button class="btn">
+    CONSTITUTION & RULES
+  </button>
+  </router-link>
+  </a>
 <br>
   <!-- CTA -->
   <a>
@@ -21,21 +25,17 @@
   </a>
 <br>
   <!-- CTA -->
-  <a>
-  <router-link :to="{name: 'HOF'}">
+  <a href="http://games.espn.com/fba/schedule?leagueId=57357" target="_blank">
   <button class="btn">
-    SCHEDULE
+    SEASON SCHEDULE
   </button>
-  </router-link>
   </a>
 <br>
   <!-- CTA -->
-  <a>
-  <router-link :to="{name: 'HOF'}">
+  <a href="http://games.espn.com/fba/tools/finalstandings?leagueId=57357" target="_blank">
   <button class="btn">
-    STANDINGS
+    FINAL STANDINGS
   </button>
-  </router-link>
   </a>
 <br>
   <!-- CTA -->
@@ -148,7 +148,7 @@
 <tr>
 <td class="rank">6</td>
 <td class="rank">32</td>
-<td><img class="logo" src="/../../static/team-timbers.svg">CRAIG</td>
+<td><img class="logo" src="/../../static/team-new.svg">CRAIG</td>
 </tr>
 <tr>
 <td class="rank">7</td>
@@ -218,7 +218,7 @@
 <tr>
 <td class="rank">7</td>
 <td class="rank">75,283</td>
-<td><img class="logo" src="/../../static/team-timbers.svg">CRAIG</td>
+<td><img class="logo" src="/../../static/team-new.svg">CRAIG</td>
 </tr>
 <tr>
 <td class="rank">8</td>
