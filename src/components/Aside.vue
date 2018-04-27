@@ -11,23 +11,41 @@
     CONSITITUTION & RULES
 </a>
 <br>
-<a href="#">
+  <!-- CTA -->
+  <a>
+  <router-link :to="{name: 'HOF'}">
   <button class="btn">
     LEAGUE HALL OF FAME
   </button>
-</a>
+  </router-link>
+  </a>
 <br>
-<a href="#">
+  <!-- CTA -->
+  <a>
+  <router-link :to="{name: 'HOF'}">
   <button class="btn">
     SCHEDULE
   </button>
-</a>
+  </router-link>
+  </a>
 <br>
-<a href="#">
+  <!-- CTA -->
+  <a>
+  <router-link :to="{name: 'HOF'}">
   <button class="btn">
     STANDINGS
   </button>
-</a>
+  </router-link>
+  </a>
+<br>
+  <!-- CTA -->
+  <a>
+  <router-link :to="{name: 'Table'}">
+  <button class="btn">
+    LEAGUE HISTORY
+  </button>
+  </router-link>
+  </a>
 <br>
     </div>
   <div class="table-wrap">

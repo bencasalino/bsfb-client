@@ -1,21 +1,26 @@
 <template>
   <div id="wrap">
-    <!-- <Table/> -->
-      <router-view/>
+<p>I AM A TEST</p>
   </div>
 </template>
 
 <script>
+
+/* eslint-disable */
 export default {
-  name: "Main"
+  name: "HOF",
+    data() {
+    return {};
+  }
+
 };
 </script>
 
 
 <style scoped>
-/* div {
+div {
 width: 100%;
 height: 400px;
-      background-color:#f7f8f3;
-} */
+      background-color:green;
+}
 </style>
