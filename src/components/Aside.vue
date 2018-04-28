@@ -389,6 +389,7 @@ td {
   text-decoration: none;
       z-index: 9999 !important;
       /* color: red; */
+            /* color: red;
 }
 
 .btn:hover {
