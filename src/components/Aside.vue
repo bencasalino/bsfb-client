@@ -346,20 +346,8 @@ table.greyGridTable thead th:first-child {
   border-left: none;
     z-index: 9999;
 }
-td {
-  /* max-width: 80px; */
 
-}
 
-/* table.greyGridTable tfoot {
-  font-size: 14px;
-  font-weight: bold;
-  color: #EBEBEB;
-  border-top: 4px solid #da2231;
-} */
-/* table.greyGridTable tfoot td {
-  font-size: 14px;
-} */
 
 .logo {
   max-height: 1.2rem;
@@ -368,16 +356,6 @@ td {
   min-width: 1.2rem;
 }
 
-/* .rank {
-    min-width: 30px;
-        max-width: 30px;
-             font-family: 'Fira Sans', sans-serif;
-      font-weight: 900;
-}
-.mid {
-    min-width: 60px;
-        max-width: 60px;
-} */
 
 .btn {
   margin-top:10px;
@@ -388,54 +366,6 @@ td {
   padding: 5px 5px 5px 5px;
   text-decoration: none;
       z-index: 9999 !important;
-      /* color: red; */
-            /* color: red;
 }
-
-.btn:hover {
-  background: #da2231;
-  text-decoration: none;
-      z-index: 9999 !important;
-}
-
-
-
-
-
-
-
-
-
-
-
-/* Underline From Left */
-/* .btn {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  position: relative;
-  overflow: hidden;
-}
-.btn {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  left: 0;
-  right: 100%;
-  bottom: 0;
-  background: #2098D1;
-  height: 4px;
-  -webkit-transition-property: right;
-  transition-property: right;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-}
-.btn:hover:before, .btn:focus:before, .btn:active:before {
-  right: 0;
-} */
 
 </style>
