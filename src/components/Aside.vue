@@ -317,7 +317,7 @@ table.greyGridTable {
 
 table.greyGridTable td, table.greyGridTable th {
   border-bottom: 2px solid rgb(225, 225, 225);
-  padding: 2px 4px;
+  padding: 2px 3px;
     z-index: 2;
       background: #ec202a;
 }
@@ -350,10 +350,10 @@ table.greyGridTable thead th:first-child {
 
 
 .logo {
-  max-height: 1.2rem;
-  max-width: 1.2rem;
-    min-height: 1.2rem;
-  min-width: 1.2rem;
+  max-height: 1.1rem;
+  max-width: 1.1rem;
+    min-height: 1.1rem;
+  min-width: 1.1rem;
 }
 
 

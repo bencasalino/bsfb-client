@@ -5,7 +5,7 @@
           <Aside/>
           <Main/>
         </div>
-        <!-- <router-view/> -->
+        <Footer/>
   </div>
 </template>
 
@@ -13,14 +13,15 @@
 import Header from '@/components/Header'
 import Main from '@/components/Main'
 import Aside from '@/components/Aside'
-
+import Footer from '@/components/Footer'
 
 export default {
   name: 'App',
   components: {
     Header,
     Main,
-    Aside
+    Aside,
+    Footer
   }
 }
 </script>
@@ -31,8 +32,9 @@ export default {
     color: #222;
     font-family: 'Fira Sans', sans-serif;
     font-weight: 400;
-    height: 100vh;
-    width: 100vw;
+    /* height: 100vh; */
+    /* width: 100vw; */
+              background-color: #222;
     }
     #split {
     z-index: 1 !important;
