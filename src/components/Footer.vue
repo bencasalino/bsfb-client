@@ -7,7 +7,7 @@
       <a href="https://bencasalino.com/">Contact Me</a> |
 
       <a href="https://github.com/bencasalino/bsfb-client">Github</a>|
-        <a href="https://bsfbbasketball.herokuapp.com/">JSON API |</a>
+        <a href="https://bsfbbasketball.herokuapp.com/">JSON API </a> |
     </p>
     <br>
     <p class="dontsueme">  ~ Not affiliated with the NBA in anyway. ~ </p>
@@ -30,6 +30,7 @@ export default {
 
 <style scoped>
 #footer {
+  text-decoration: none;
   font-size: 9px;
   display: flex;
   flex-direction: column;
@@ -41,11 +42,16 @@ background-color: #222;
 }
 
 .dontsueme {
+    text-decoration: none;
   font-style: initial;
   font-size: 8px;
 }
 .footer-logo{
   max-height: 2rem;
   max-width:2rem;
+}
+
+a {
+    text-decoration: none;
 }
 </style>
