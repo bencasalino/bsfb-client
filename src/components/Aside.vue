@@ -3,9 +3,8 @@
   <div class="splitter">
     <div class="ctas">
 <br>
-      <!-- <p>
-      BSFB about section
-    </p> -->
+<h6>LINKS & RESOURCES
+</h6>
   <!-- CTA -->
   <a>
   <router-link :to="{name: 'Rules'}">
@@ -25,26 +24,36 @@
   </a>
 <br>
   <!-- CTA -->
-  <a href="http://games.espn.com/fba/schedule?leagueId=57357" target="_blank">
-  <button class="btn">
-    SEASON SCHEDULE
-  </button>
-  </a>
-<br>
-  <!-- CTA -->
-  <a href="http://games.espn.com/fba/tools/finalstandings?leagueId=57357" target="_blank">
-  <button class="btn">
-    FINAL STANDINGS
-  </button>
-  </a>
-<br>
-  <!-- CTA -->
   <a>
   <router-link :to="{name: 'Table'}">
   <button class="btn">
     LEAGUE HISTORY
   </button>
   </router-link>
+  </a>
+<br>
+  <!-- CTA -->
+  <a>
+  <router-link :to="{name: 'Rules'}">
+  <button class="btn">
+    USEFUL RESOURCES
+  </button>
+  </router-link>
+  </a>
+  <br>
+    <br>
+    <!-- CTA -->
+  <a href="http://games.espn.com/fba/schedule?leagueId=57357" target="_blank">
+  <button class="btn ext">
+    SEASON SCHEDULE
+  </button>
+  </a>
+<br>
+  <!-- CTA -->
+  <a href="http://games.espn.com/fba/tools/finalstandings?leagueId=57357" target="_blank">
+  <button class="btn ext">
+    FINAL STANDINGS
+  </button>
   </a>
 <br>
     </div>
@@ -109,8 +118,9 @@
 
 <div class="splitter">
 <br>
-<!-- <h3>ALL TIME WINS</h3> -->
+
 <div class="table-wrap">
+<h6>ALL TIME WINS</h6>
 <table class="greyGridTable">
 <thead>
 <tr>
@@ -174,8 +184,9 @@
 </table>
 </div>
 <br>
-<!-- <h3>ALL TIME PTS</h3> -->
+
 <div class="table-wrap">
+  <h6>ALL TIME PTS</h6>
 <table class="greyGridTable">
 <thead>
 <tr>
@@ -284,6 +295,7 @@ export default {
 }
 .table-wrap {
   /* background: #dadbd6; */
+  margin-right: 6px;
   z-index: 2;
 }
 
@@ -358,14 +370,46 @@ table.greyGridTable thead th:first-child {
 
 
 .btn {
-  margin-top:10px;
-  font-family: Arial;
+  margin-top:5px;
+     font-family: 'Fira Sans', sans-serif;
   color: #f7f8f3;
   font-size: 11px;
   background: #ec202a;
-  padding: 5px 5px 5px 5px;
+  padding: 8px 2px 8px 2px;
   text-decoration: none;
       z-index: 9999 !important;
+      min-width: 150px;
+}
+.btn:hover {
+  margin-top:5px;
+     font-family: 'Fira Sans', sans-serif;
+  color: #aaa;
+  font-size: 11px;
+  background: #0777bc;
+  padding: 8px 2px 8px 2px;
+  text-decoration: none;
+      z-index: 9999 !important;
+      min-width: 150px;
+      cursor: pointer;
 }
 
+
+h6 {
+      font-size: .9rem;
+      font-family: 'Fira Sans', sans-serif;
+      font-weight: 900;
+      text-align: center;
+      color: #222;
+      border-bottom: 2px solid white;
+}
+
+.ext {
+    background: #0777bc;
+}
+
+.borda {
+        border-bottom: 2px solid white;
+        background: #f7f8f3;
+        color: #f7f8f3;
+}
 </style>

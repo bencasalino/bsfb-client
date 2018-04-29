@@ -1,5 +1,11 @@
 <template>
 <div id="Wrapper">
+  <br>
+  <div>
+    <h6>This table contains all past leauge history since 2008. Futrue functionality will include column sorting capabilities. </h6>
+  </div>
+  <div class="force">
+  <div id="another-wrap">
       <div class="row bold">
       <div class="flow th-label small">  ID#  <br> </div>
       <div class="flow th-label hundo"> MANAGER <br> NAME<br> </div>
@@ -35,6 +41,69 @@
   </div>
   </div>
   </div>
+      <div class="table-wrap">
+    <table class="greyGridTable">
+    <tbody>
+    <tr>
+    <td>2008</td>
+    <td> <img class="logo" src="/../../static/team-jon.svg">JON</td>
+    </tr>
+    <tr>
+    <td>2009</td>
+    <td> <img class="logo" src="/../../static/team-jon.svg">
+    JON</td>
+    </tr>
+    <tr>
+    <td>2010</td>
+    <td> <img class="logo" src="/../../static/team-ben.svg">
+    BEN</td>
+    </tr>
+    <tr>
+    <td>2011*</td>
+    <td> <img class="logo" src="/../../static/team-kristen.svg">
+    KRISTEN</td>
+    </tr>
+    <tr>
+    <td>2012*</td>
+    <td> <img class="logo" src="/../../static/team-ben.svg">
+    BEN</td>
+    </tr>
+    <tr>
+    <td>2013</td>
+    <td> <img class="logo" src="/../../static/team-rafa.svg">
+    RAFA</td>
+    </tr>
+    <tr>
+    <td>2014</td>
+    <td> <img class="logo" src="/../../static/team-jon.svg">
+    JON</td>
+    </tr>
+    <tr>
+    <td>2015</td>
+    <td> <img class="logo" src="/../../static/team-rafa.svg">
+    RAFA</td>
+    </tr>
+    <tr>
+    <td>2016</td>
+    <td> <img class="logo" src="/../../static/adam2.svg">
+    ADAM</td>
+    </tr>
+    <tr>
+    <td>2017</td>
+    <td><img class="logo" src="/../../static/burg5.svg">BURGES</td>
+    </tr>
+    </tbody>
+    </table>
+    <br>
+
+  </div>
+  <!-- end past champs table and row  -->
+
+  </div>
+  <div>
+  </div>
+
+  </div>
 </template>
 
 
@@ -66,19 +135,22 @@ export default {
 <style scoped>
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans|Nanum+Gothic:700');
 
-#Wrapper {
-  background-color:#f7f8f3;
+
+#another-wrap {
+    background-color:#f7f8f3;
   color: #222;
   margin: .2rem;
   font-size: 11px;
-  margin-top:40px;
-  margin-left: 200px;
+  margin-top:20px;
+  margin-left: 20px;
     /* min-width: 100vw; */
     font-family: 'Nanum Gothic', sans-serif;
         font-family: 'Fira Sans', sans-serif;
         text-align: left;
           justify-content: center;
-
+}
+#Wrapper {
+/* display: flex; */
 }
 
 
@@ -135,4 +207,74 @@ text-align: left;
 
 }
 
+h6 {
+padding-left: 20px;
+      font-size: .7rem;
+      font-family: 'Fira Sans', sans-serif;
+      font-weight: 500;
+      text-align: left;
+      color: white;
+      border-bottom: 2px solid white;
+}
+
+.force {
+  display: flex;
+}
+
+/* border overall */
+table.greyGridTable {
+  border: 2px solid #f7f8f3 !important;
+  /* min-width: 200px; */
+  text-align: left;
+  border-collapse: collapse;
+      font-size: .3rem;
+      font-family: 'Fira Sans', sans-serif;
+      font-weight: 400;
+        z-index: 2;
+}
+
+table.greyGridTable td, table.greyGridTable th {
+  border-bottom: 2px solid rgb(225, 225, 225);
+  padding: 2px 3px;
+    z-index: 2;
+      background: #ec202a;
+}
+table.greyGridTable tbody td {
+  font-size: 11px;
+    z-index: 9999;
+      background: #EBEBEB;
+}
+table.greyGridTable td:nth-child(even) {
+  /* background: #EBEBEB; */
+}
+table.greyGridTable thead {
+  background: #ec202a;
+  border-bottom: 4px solid #0777bc;
+    z-index: 9999;
+}
+table.greyGridTable thead th {
+  font-size: 11px;
+  font-weight: bold;
+  color: #f7f8f3;
+  text-align: center;
+  border-left: 2px solid #f7f8f3;
+    z-index: 9999;
+}
+table.greyGridTable thead th:first-child {
+  border-left: none;
+    z-index: 9999;
+}
+
+
+.table-wrap {
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.logo {
+  max-height: 1.1rem;
+  max-width: 1.1rem;
+    min-height: 1.1rem;
+  min-width: 1.1rem;
+}
 </style>
