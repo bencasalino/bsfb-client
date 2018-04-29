@@ -271,12 +271,12 @@ export default {
 <style scoped>
 
 .aside {
+
   padding: 1rem;
   max-width: 300px;
-    min-width: 300px;
+    /* min-width: 300px; */
       max-height: 600px;
-    min-height: 600px;
-  /* height: 200px; */
+    /* min-height: 600px; */
     background: linear-gradient(to bottom, #dadbd6 , #c4c5c0);
  z-index: 2 !important;
     border-bottom-left-radius: 10px;

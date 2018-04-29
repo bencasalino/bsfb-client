@@ -1,10 +1,10 @@
 <template>
   <div id="app">
         <Header/>
-        <span id="split">
+        <div id="split">
           <Aside/>
           <Main/>
-        </span>
+        </div>
         <!-- <router-view/> -->
   </div>
 </template>
@@ -32,7 +32,7 @@ export default {
     font-family: 'Fira Sans', sans-serif;
     font-weight: 400;
     height: 100vh;
-    min-width: 100vw;
+    width: 100vw;
     }
     #split {
     z-index: 1 !important;
