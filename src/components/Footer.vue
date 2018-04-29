@@ -54,4 +54,9 @@ background-color: #222;
 a {
     text-decoration: none;
 }
+
+@media screen and (max-width: 701px) {
+  #footer { min-height: 50vh; }
+}
+
 </style>

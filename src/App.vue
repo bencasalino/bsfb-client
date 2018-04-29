@@ -2,8 +2,12 @@
   <div id="app">
         <Header/>
         <div id="split">
-          <Aside/>
-          <Main/>
+          <Aside id="hideme"/>
+          <Main id="hide"/>
+                  <div class="heyo">Site best viewed on large screen.
+                    <br>
+                    Mobile version in future development.
+                  </div>
         </div>
         <Footer/>
   </div>
@@ -42,6 +46,25 @@ export default {
           background-color: #222;
     }
 
+@media screen and (max-width: 701px) {
+  #hide { display: none; }
+  #hideme {
+    max-width: 100vw;
+    }
+}
+@media screen and (max-width: 401px) {
+  .heyo {
+    /* height: 50px;
+    width: 50px; */
+        margin-top: 20px;
+    margin-left: 10px;
+    color: white;
+font-size: .6rem;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+
+  }
+}
 
 
 </style>

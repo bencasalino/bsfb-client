@@ -412,4 +412,8 @@ h6 {
         background: #f7f8f3;
         color: #f7f8f3;
 }
+
+@media screen and (max-width: 701px) {
+  .table-wrap { display: none; }
+}
 </style>

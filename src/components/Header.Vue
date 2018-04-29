@@ -152,4 +152,11 @@ h1 {
   flex-direction: column;
 }
 
+@media screen and (max-width: 701px) {
+  .header-center { display: none; }
+  h1 {
+    font-size: 20px;
+  }   /* hide it elsewhere */
+}
+
 </style>

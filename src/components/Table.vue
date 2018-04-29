@@ -41,7 +41,7 @@
   </div>
   </div>
   </div>
-      <div class="table-wrap">
+      <div class="leg">
     <table class="greyGridTable">
     <tbody>
     <tr>
@@ -266,7 +266,7 @@ table.greyGridTable thead th:first-child {
 }
 
 
-.table-wrap {
+.leg {
   margin-top: 20px;
   margin-left: 10px;
 }
