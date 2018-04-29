@@ -1,5 +1,5 @@
 <template>
-  <div id="wrap">
+  <div id="main-wrap">
     <!-- <Table/> -->
       <router-view/>
   </div>

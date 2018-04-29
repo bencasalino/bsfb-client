@@ -1,19 +1,19 @@
 <template>
 <div id="Wrapper">
       <div class="row bold">
-      <div class="flow small">  ID  <br> </div>
-      <div class="flow hundo"> MANAGER <br> </div>
-      <div class="flow big"> TEAM NAME <br> </div>
-      <div class="flow mid"> JOINED <br> </div>
-      <div class="flow mid"> STATUS <br> </div>
-      <div class="flow mid">   PTS <br> </div>
-      <div class="flow num">   W <br> </div>
-      <div class="flow num">   L <br> </div>
-      <div class="flow num">   GAMES <br> </div>
-      <div class="flow num">   TOP 8 <br> </div>
-      <div class="flow num">   TOP 4 <br> </div>
-      <div class="flow num">   FINALS <br> </div>
-      <div class="flow num">   TITLES <br> </div>
+      <div class="flow th-label small">  ID#  <br> </div>
+      <div class="flow th-label hundo"> MANAGER <br> NAME<br> </div>
+      <div class="flow th-label big"> TEAM <br> NAME </div>
+      <div class="flow th-label mid"> YEAR <br> JOINED <br> </div>
+      <div class="flow th-label mid"> CURRENT <br> STATUS <br> </div>
+      <div class="flow th-label mid">   TOTAL <br> POINTS <br> </div>
+      <div class="flow th-label num">   W's <br> </div>
+      <div class="flow th-label num">   L's <br> </div>
+      <div class="flow th-label num">   GAMES <br> PLAYED <br> </div>
+      <div class="flow th-label num">   TOP <br> 8 <br> </div>
+      <div class="flow th-label num">   TOP <br> 4 <br> </div>
+      <div class="flow th-label num">   FINALS <br> </div>
+      <div class="flow th-label  num">   TITLES <br> </div>
   <br>
   </div>
   <div v-bind:key="single_manager.managers" v-for="single_manager in data.managers">
@@ -71,6 +71,8 @@ export default {
   color: #222;
   margin: .2rem;
   font-size: 11px;
+  margin-top:40px;
+  margin-left: 200px;
     /* min-width: 100vw; */
     font-family: 'Nanum Gothic', sans-serif;
         font-family: 'Fira Sans', sans-serif;
@@ -123,6 +125,14 @@ text-align: left;
 }
 .bold {
   font-weight: 900;
+}
+.th-label {
+      min-height: 20px;
+    max-height: 20px;
+    font-size: 8px;
+    font-weight: 900;
+    color: #333;
+
 }
 
 </style>

@@ -37,7 +37,7 @@ export default {
   justify-content: center;
   align-items: center;
 color: #aaa;
-height: 20vh;
+height: 13vh;
 background-color: #222;
 }
 
