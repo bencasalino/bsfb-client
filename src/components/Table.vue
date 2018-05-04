@@ -2,7 +2,7 @@
 <div id="Wrapper">
   <br>
   <div>
-    <h6>This table contains all past leauge history since 2008. Futrue functionality will include column sorting capabilities. </h6>
+    <h6>This table contains all past league history since 2008. Future functionality will include column sorting capabilities. </h6>
   </div>
   <div class="force">
   <div id="another-wrap">
